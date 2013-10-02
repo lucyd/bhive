@@ -1,5 +1,5 @@
-                                Device drivers for different Devices, Peripherals, standard and proprietary interfaces.
+Device drivers for different Devices, Peripherals, standard and proprietary interfaces.
                                 Board Support Packages.
                                 Assembly level Programming for various Micro-controllers, DSP, Network processors and ASIC platforms.
                                 RTOS ( Linux, Vxworks).
-                                Board bring-up, Diagnostic and Production test software
+                                Board bring-up, Diagnostic and Production test software.
