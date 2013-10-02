@@ -1,0 +1,3 @@
+RTL Coding in Verilog and VHDL.
+                                Behavioral model for verification.
+                                IP Integration at SoC Level and Verification.

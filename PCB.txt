@@ -1,0 +1,3 @@
+Experienced team of engineers with hands-on experience on System design of varied complexity
+                                PCB layout Design, Design Analysis (Signal Integrity Analysis, EMI analysis, Thermal Analysis, Reliability analysis)
+        PCB Fabrication, PCB assembly and Testing) for Engineering prototypes and production.
