@@ -1,0 +1,7 @@
+<li>Experienced team of engineers with hands-on experience on System design of varied complexity</li>
+<li>PCB layout Design, Design Analysis (Signal Integrity Analysis, EMI analysis, Thermal Analysis, Reliability analysis)</li>
+<li>PCB Fabrication, PCB assembly and Testing) for Engineering prototypes and production
+PCB: Up to 18 layers of PCB design and expertise in form factor</li>
+<li>Skilled to deliver SoC, non-SoC platforms on-time and aid time to marke</li>
+<li>Hands-on development experience on PCB for SoC and prototyping </li>
+

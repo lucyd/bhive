@@ -10,18 +10,9 @@
 		background: #3D3D3D;
 		background: #282828;
 		background: #FFFFFF;
-		font-family: "Times New Roman", Serif;
-		font-family: sans-serif;
-		font-family: 'Arial', sans-serif;
-		font-family: 'Noto Sans', sans-serif;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-family: 'Arvo', sans-serif;
-		font-family: 'Ubuntu';
-		font-size: 12pt;
-		font-weight: 400;
-		color: #FFFFFF;
-		color:  #939393;
-		color:  #000000;
+		font-family: "FreeSans", Serif;
+		font-size: 13pt;
+		font-weight: 300;
 		color:  #555555;
 	}
 	
@@ -41,6 +32,11 @@
 	{
 		padding: 0;
 		list-style: none;
+	}
+
+	li
+	{
+		margin: 0.25em;
 	}
 	
 	p
@@ -386,7 +382,7 @@
 	#content
 	{
 		float: left;
-		width: 40%;
+		width: 50%;
 	}
 	
 	#content .title
@@ -413,7 +409,7 @@
 	#sidebar
 	{
 		float: right;
-		width: 55%;
+		width: 45%;
 	}
 
 /*********************************************************************************/
@@ -438,7 +434,7 @@
 	{
 		letter-spacing: 0.20em;
 		text-align: center;
-		text-transform: uppercase;
+		text-transform: none;
 		font-size: 0.80em;
 		color: #6F6F6F;
 	}
@@ -593,7 +589,10 @@
         line-height: 18px;
 }
 #cssmenu > ul > li:hover > a {
-	background: #ca8e02 repeat;
+	background: #1D1D1D repeat;
+	background: #AC7219 repeat;
+	background: #2F2F2F repeat;
+	background: #2A2A2A repeat;
 	text-shadow: 0 -1px 0 #97321f;
 	text-shadow: 0 -1px 0 rgba(122, 42, 26, 0.64);
 }
@@ -605,7 +604,12 @@
 }
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li > a:active {
-	background: url(hover.png) repeat;
+	background: #ca8e02 repeat;
+	background: #1D1D1D repeat;
+	background: #AC7219 repeat;
+	background: #343434 repeat;
+	background: #2F2F2F repeat;
+	background: #2A2A2A repeat;
 }
 /* Childs */
 #cssmenu > ul ul {

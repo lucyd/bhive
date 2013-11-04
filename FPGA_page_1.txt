@@ -1,0 +1,8 @@
+<li>RTL Coding in Verilog and VHDL.</li>
+                                        <li>Verification Suite development and Automation of the verification enviornment</li>
+                                        <li>Behavioral model for verification.</li>
+                                        <li>IP Integration at SoC Level and Verification.</li>
+                                        <li>Synthesis.</li>
+                                        <li>RTL/Pre-Layout/Post-Layout netlist verification</li>
+                                        <li>Formal Verification: RTL, netlist and at various stages of implementation.</li>
+                                        <li>Emulation/Target Board for ASIC/IP validation.</li>

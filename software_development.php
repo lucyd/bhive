@@ -54,9 +54,20 @@ $(document).ready(function () {
     });
 
     $(".save_button").click(function (e) {
-        var content = $(this).prev().text();
-        var that = $(this);
 	var filename = $(this).prev().attr("filename");
+	if(filename == "ASIC_page_1.txt")
+	{
+        	var content = $(this).prev().html();
+	}
+	else if(filename == "ASIC_page_2.txt")
+	{
+		var content = $(this).prev().html();
+	}
+	else
+	{
+		var content = $(this).prev().text();
+	}
+        var that = $(this);
         $.ajax({
             url: 'save.php',
             type: 'POST',
@@ -90,196 +101,133 @@ $(document).ready(function () {
 	<div id="cssmenu">
 		<ul>
 			<!-- <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li> -->
-			<li class="active"><a href="#" accesskey="1" title=""><span>Homepage</span></a></li>
-			<li class="has-sub">
+			<li ><a href="index.php" accesskey="0" title=""><span>Homepage</span></a></li>
+			<li class="active">
 				<a href="#" accesskey="1" title=""><span>Design Services</span></a>
 				<ul>
-					<li><a href="#"><span>ACPI</span></a></li>
-					<li><a href="#"><span>FPGA</span></a></li>
-					<li><a href="#"><span>Embedded Systems</span></a></li>
-					<li><a href="#"><span>PCB</span></a></li>
-					<li><a href="#"><span>Software Development</span></a></li>
+					<li><a href="ASIC.php"><span>ASIC</span></a></li>
+					<li><a href="FPGA.php"><span>FPGA</span></a></li>
+					<li><a href="embedded_systems.php"><span>Embedded Systems</span></a></li>
+					<li><a href="PCB.php"><span>PCB</span></a></li>
+					<li><a href="software_development.php"><span>Software Development</span></a></li>
 				</ul>
 			</li>
 
-			<li><a href="#" accesskey="2" title=""><span>Products</span></a></li>
+			<li><a href="products.php" accesskey="2" title=""><span>Products</span></a></li>
 			<li class="has-sub">
-				<a href="#" accesskey="3" title=""><span>Corporate</span></a>
+				<a href="" accesskey="3" title=""><span>Corporate</span></a>
 				<ul>
-					<li><a href="#"><span>Management</span></a></li>
-					<li><a href="#"><span>Partners</span></a></li>
+					<li><a href="management.php"><span>Management</span></a></li>
+					<li><a href="partners.php"><span>Partners</span></a></li>
 				</ul>
 			</li>
 			<li class="has-sub">
 				<a href="#" accesskey="4" title=""><span>Education</span></a>
 				<ul>
-					<li><a href="#"><span>Training</span></a></li>
-					<li><a href="#"><span>Counselling</span></a></li>
-					<li><a href="#"><span>Electronics &nbsp; Play School</span></a></li>
+					<li><a href="training.php"><span>Training</span></a></li>
+					<li><a href="counselling.php"><span>Counselling</span></a></li>
+					<li><a href="electronics.php"><span>Electronics &nbsp; Play School</span></a></li>
 					<!-- <li><a href="#"><span></span></a></li> -->
 				</ul>
 			</li>
 			<li class="has-sub">
 				<a href="#" accesskey="5" title=""><span>Careers</span></a>
 				<ul>
-					<li><a href="#"><span>Internships</span></a></li>
-					<li><a href="#"><span>Jobs</span></a></li>
+					<li><a href="internships.php"><span>Internships</span></a></li>
+					<li><a href="jobs.php"><span>Jobs</span></a></li>
 				</ul>
 			</li>
-			<li><a href="#" accesskey="6" title=""><span>News</span></a></li>
-			<li><a href="#" accesskey="7" title=""><span>Contact Us</span></a></li>
+			<li><a href="news.php" accesskey="6" title=""><span>News</span></a></li>
+			<li><a href="contact.php" accesskey="7" title=""><span>Contact Us</span></a></li>
 		</ul>
 	</div>
-<!--</div>-->
-<div id="page" class="container">
-	<div id="content">
-		<div class="title">
-			<h2 style="font-family:'DejavuSans',sans-serif; padding-left:2em" >Welcome to Bhive</h2>
-		</div>
-		<div class="editable" contentEditable="true" filename="intro.txt">
-			<p>
-			<?php
-				echo file_get_contents("intro.txt");
-			?>
-			</p>
-		</div>
+
+<!--	
+<div id="page" class="container" style="padding: 0.5em 0em; overflow: hidden">
+	<div id="sidebar" style="width:97%; text-align: center; float:center" align="center">
+		<a  class="image image-full"><img style src="images/ASIC_page.jpg" alt="" height="350px"/></a>
 	</div>
-	<div id="sidebar"><a href="#" class="image image-full"><img style src="images/pic01.jpg" alt="" height="350px"/></a></div>
+-->
 </div>
-<div id="featured-wrapper">
-	<div id="featured" class="container">
-		<table width="100%">
-		<tr>
-		<td>
-		<div class="column1">
-			<!-- <span class="icon icon-bar-chart"></span> -->
-			<img src="images/vision.jpg" width="100%" alt="Vision">
-			<div class="title">
-				<h2>Vision</h2>
-				<div class="editable" contentEditable="true" filename="vision.txt">
-					<span class="byline">
-					<?php
-						echo file_get_contents("vision.txt");
-					?>
-					</span>
-				</div>
-			</div>
+<div class="container">
+	<div id="content" style="width:100%; padding-top:2em">
+		<div class="title" style="padding-bottom:1.5em">
+			<h2>Software Development</h2>
 		</div>
-		</td>
-		<td>
-		<div class="column2">
-			<div class="title">
-			<img src="images/expertise.jpg" width="90%"  alt="Expertise">
-				<h2>Expertise</h2>
-				<div class="editable" contentEditable="true" filename="expertise.txt">
-					<span class="byline">
+		<table style="padding-left:0.7em">
+			<tr>
+			<td>
+				<div class="editable" contenteditable="true" filename="software_development_page_1.txt" >
+					<p>
 					<?php
-						echo file_get_contents("expertise.txt");
+						echo file_get_contents("software_development_page_1.txt");
 					?>
-					</span>
+					</p>
 				</div>
-			</div>
-		</div>
-		</td>
-		<td>
-		<div class="column3">
-			<img src="images/design_services.png" width="80%" style="padding-left:20px;"  alt="Design Services">
-			<div class="title">
-				<h2>Design Services</h2>
-				<div class="editable" contentEditable="true" filename="design_services.txt">
-					<span class="byline">
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h3>
+					Ways of Business
+				</h3>
+				<div class="editable" contenteditable="true" filename="software_development_page_2.txt" >
+					<p>
 					<?php
-						echo file_get_contents("design_services.txt");
+						echo file_get_contents("software_development_page_2.txt");
 					?>
-					</span>
+					</p>
 				</div>
-			</div>
-		</div>
-		</td>
-		</tr>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h3>
+					Turnkey Product Development
+				</h3>
+				<div class="editable" contenteditable="true" filename="software_development_page_3.txt" >
+					<p>
+					<?php
+						echo file_get_contents("software_development_page_3.txt");
+					?>
+					</p>
+				</div>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h3>
+					Customization
+				</h3>
+				<div class="editable" contenteditable="true" filename="software_development_page_4.txt" >
+					<p>
+					<?php
+						echo file_get_contents("software_development_page_4.txt");
+					?>
+					</p>
+				</div>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<h3>
+					Maintenance
+				</h3>
+				<div class="editable" contenteditable="true" filename="software_development_page_5.txt" >
+					<p>
+					<?php
+						echo file_get_contents("software_development_page_5.txt");
+					?>
+					</p>
+				</div>
+			</td>
+			</tr>
 		</table>
-	</div>
-</div>
-<div id="portfolio-wrapper">
-	<div id="portfolio" class="container">
-		<div class="column1">
-			<h2>Embedded system</h2>
-			</br>
-			<a href="#" class="image image-full"><img src="images/embedded_system.jpg" height="150" alt="" /></a>
-			<div class="box">
-				<div class="editable" contentEditable="true" filename="embedded_system.txt">
-					<p class="special_p">
-						<?php
-							echo file_get_contents("embedded_system.txt");
-						?>
-					</p>
-				</div>
-				<a href="#" class="special_button">Read More</a>
-			</div>
-		</div>		
-		<div class="column2">
-			<h2>Software development</h2>
-			</br>
-			<a href="#" class="image image-full"><img src="images/software_development.jpg" height="150" alt="" /></a>
-			<div class="box">
-				<div class="editable" contentEditable="true" filename="software_development.txt">
-				<p class="special_p">
-					<?php
-						echo file_get_contents("software_development.txt");
-					?>
-				</p>
-				</div>
-				<a href="#" class="special_button">Read More</a>
-			</div>
-		</div>		
-		<div class="column3">
-			<h2>ASIC</h2>
-			</br>
-			<a href="#" class="image image-full"><img src="images/ASIC.jpg" height="150" alt="" /></a>
-			<div class="box">
-				<div class="editable" contentEditable="true" filename="ASIC.txt">
-				<p class="special_p">
-					<?php
-						echo file_get_contents("ASIC.txt");
-					?>
-				</p>
-				</div>
-				<a href="#" class="special_button">Read More</a>
-			</div>
-		</div>			
-		<div class="column4">
-			<h2>PCB</h2>
-			</br>
-			<a href="#" class="image image-full"><img src="images/PCB.jpg" height="150" alt="" /></a>
-			<div class="box">
-				<div class="editable" contentEditable="true" filename="PCB.txt">
-					<p class="special_p">
-						<?php
-							echo file_get_contents("PCB.txt");
-						?>
-					</p>
-				</div>
-				<a href="#" class="special_button">Read More</a>
-			</div>
-		</div>			
-	</div>
-</div>
-<div id="contact" class="container">
-		<div class="major">
-			<h2>Follow us</h2>
-			<span class="byline">We are more than welcome to receive your feedback</span>
 		</div>
-		<ul class="contact">
-			<a href="#"><li><img height="64" width="64" src="images/facebook_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/twitter_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/googleplus_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/youtube_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/linkedin_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/blogger_follow.png"></li></a>
-		</ul>
 </div>
 <div id="copyright" class="container">
-	<p>Copyright (c) 2013 MYBHIVE.com. All rights reserved.</p>
-</div>
+        <p>Copyright (c) Bhive Design Technologies 2013 (mybhive.com). All rights reserved.</p>
+	</div>
+
 </body>
 </html>

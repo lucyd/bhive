@@ -1,0 +1,8 @@
+<li>Systemetic and Qualitative approach for FPGA implementations</li>
+                                        <li>Selection of FPGA/CPLD devices for specification, optimum speed/power performance within costconstraints</li>
+                                        <li>Design and Implementation of IP blocks</li>
+                                        <li>Integration of IP blocks and system level functional simulation</li>
+                                        <li>Mapping Designs to target FPGA/CPLD and physical synthesis</li>
+                                        <li>Expertise in emulation environment for multi-million gate System On Chip designs</li>
+                                        <li>Innovative target board design techniques to enable emulation system seamless interfacing with real time test equipments and debuggers</li>
+                                        <li>Exposure to Devices and EDA tools from various vendors (XILINX, ALTERA, Lattice, Actel)</li>

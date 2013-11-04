@@ -1,0 +1,1 @@
+Architecture to netlist, Integration of IP’s, Optimizing on chip Buses, architecture and High Speed interface. Skilled to deliver SoC from concept to silicon on-time and aid time to market. Hand-on development experience on wireless, broadband and networking SoCs.

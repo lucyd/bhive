@@ -1,0 +1,11 @@
+<li>Device drivers for different Devices, Peripherals, standard and proprietary interfaces</li>
+<li>Board Support Packages</li>
+<li>Assembly level Programming for various Micro-controllers, DSP, Network processors and ASIC platforms</li>
+<li>RTOS ( Linux, Vxworks)</li>
+<li>Board bring-up, Diagnostic and Production test software</li>
+<li>Protocol stacks, Embedded web servers</li>
+<li>8/16/32/64 bit Processor/micro-controllers Architecture</li>
+<li>DSP (ADI, TI)</li>
+<li>Standard/Propriety communication protocols</li>
+<li>Performance tuning and optimization of applications</li>
+<li>FPGA based system design for embedded applications</li>

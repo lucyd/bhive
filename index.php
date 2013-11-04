@@ -90,51 +90,51 @@ $(document).ready(function () {
 	<div id="cssmenu">
 		<ul>
 			<!-- <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li> -->
-			<li class="active"><a href="#" accesskey="1" title=""><span>Homepage</span></a></li>
+			<li class="active"><a href="index.php" accesskey="0" title=""><span>Homepage</span></a></li>
 			<li class="has-sub">
 				<a href="#" accesskey="1" title=""><span>Design Services</span></a>
 				<ul>
-					<li><a href="#"><span>ACPI</span></a></li>
-					<li><a href="#"><span>FPGA</span></a></li>
-					<li><a href="#"><span>Embedded Systems</span></a></li>
-					<li><a href="#"><span>PCB</span></a></li>
-					<li><a href="#"><span>Software Development</span></a></li>
+					<li><a href="ASIC.php"><span>ASIC</span></a></li>
+					<li><a href="FPGA.php"><span>FPGA</span></a></li>
+					<li><a href="embedded_systems.php"><span>Embedded Systems</span></a></li>
+					<li><a href="PCB.php"><span>PCB</span></a></li>
+					<li><a href="software_development.php"><span>Software Development</span></a></li>
 				</ul>
 			</li>
 
-			<li><a href="#" accesskey="2" title=""><span>Products</span></a></li>
+			<li><a href="products.php" accesskey="2" title=""><span>Products</span></a></li>
 			<li class="has-sub">
-				<a href="#" accesskey="3" title=""><span>Corporate</span></a>
+				<a href="" accesskey="3" title=""><span>Corporate</span></a>
 				<ul>
-					<li><a href="#"><span>Management</span></a></li>
-					<li><a href="#"><span>Partners</span></a></li>
+					<li><a href="management.php"><span>Management</span></a></li>
+					<li><a href="partners.php"><span>Partners</span></a></li>
 				</ul>
 			</li>
 			<li class="has-sub">
 				<a href="#" accesskey="4" title=""><span>Education</span></a>
 				<ul>
-					<li><a href="#"><span>Training</span></a></li>
-					<li><a href="#"><span>Counselling</span></a></li>
-					<li><a href="#"><span>Electronics &nbsp; Play School</span></a></li>
+					<li><a href="training.php"><span>Training</span></a></li>
+					<li><a href="counselling.php"><span>Counselling</span></a></li>
+					<li><a href="electronics.php"><span>Electronics &nbsp; Play School</span></a></li>
 					<!-- <li><a href="#"><span></span></a></li> -->
 				</ul>
 			</li>
 			<li class="has-sub">
 				<a href="#" accesskey="5" title=""><span>Careers</span></a>
 				<ul>
-					<li><a href="#"><span>Internships</span></a></li>
-					<li><a href="#"><span>Jobs</span></a></li>
+					<li><a href="internships.php"><span>Internships</span></a></li>
+					<li><a href="jobs.php"><span>Jobs</span></a></li>
 				</ul>
 			</li>
-			<li><a href="#" accesskey="6" title=""><span>News</span></a></li>
-			<li><a href="#" accesskey="7" title=""><span>Contact Us</span></a></li>
+			<li><a href="news.php" accesskey="6" title=""><span>News</span></a></li>
+			<li><a href="contact.php" accesskey="7" title=""><span>Contact Us</span></a></li>
 		</ul>
 	</div>
 <!--</div>-->
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
-			<h2 style="font-family:'DejavuSans',sans-serif; padding-left:2em" >Welcome to Bhive</h2>
+			<h2 style="font-family:'DejavuSans',sans-serif; padding-left:1.5em; font-size:2.4em; font-weight:700; letter-spacing:0.04em" >Welcome to Bhive</h2>
 		</div>
 		<div class="editable" contentEditable="true" filename="intro.txt">
 			<p>
@@ -144,7 +144,11 @@ $(document).ready(function () {
 			</p>
 		</div>
 	</div>
-	<div id="sidebar"><a href="#" class="image image-full"><img style src="images/pic01.jpg" alt="" height="350px"/></a></div>
+	<div id="sidebar">
+	<a  class="image image-full">
+	<img style src="images/pic01.jpg" alt="" height="300px"/>
+	</a>
+	</div>
 </div>
 <div id="featured-wrapper">
 	<div id="featured" class="container">
@@ -157,7 +161,7 @@ $(document).ready(function () {
 			<div class="title">
 				<h2>Vision</h2>
 				<div class="editable" contentEditable="true" filename="vision.txt">
-					<span class="byline">
+					<span class="byline" style="line-height:150%">
 					<?php
 						echo file_get_contents("vision.txt");
 					?>
@@ -172,7 +176,7 @@ $(document).ready(function () {
 			<img src="images/expertise.jpg" width="90%"  alt="Expertise">
 				<h2>Expertise</h2>
 				<div class="editable" contentEditable="true" filename="expertise.txt">
-					<span class="byline">
+					<span class="byline" style="line-height:150%">
 					<?php
 						echo file_get_contents("expertise.txt");
 					?>
@@ -187,7 +191,7 @@ $(document).ready(function () {
 			<div class="title">
 				<h2>Design Services</h2>
 				<div class="editable" contentEditable="true" filename="design_services.txt">
-					<span class="byline">
+					<span class="byline" style="line-height:150%">
 					<?php
 						echo file_get_contents("design_services.txt");
 					?>
@@ -205,7 +209,7 @@ $(document).ready(function () {
 		<div class="column1">
 			<h2>Embedded system</h2>
 			</br>
-			<a href="#" class="image image-full"><img src="images/embedded_system.jpg" height="150" alt="" /></a>
+			<a  class="image image-full"><img src="images/embedded_system.jpg" height="150" alt="" /></a>
 			<div class="box">
 				<div class="editable" contentEditable="true" filename="embedded_system.txt">
 					<p class="special_p">
@@ -214,13 +218,13 @@ $(document).ready(function () {
 						?>
 					</p>
 				</div>
-				<a href="#" class="special_button">Read More</a>
+				<a href="embedded_system.php" class="special_button">Read More</a>
 			</div>
 		</div>		
 		<div class="column2">
 			<h2>Software development</h2>
 			</br>
-			<a href="#" class="image image-full"><img src="images/software_development.jpg" height="150" alt="" /></a>
+			<a  class="image image-full"><img src="images/software_development.jpg" height="150" alt="" /></a>
 			<div class="box">
 				<div class="editable" contentEditable="true" filename="software_development.txt">
 				<p class="special_p">
@@ -229,13 +233,13 @@ $(document).ready(function () {
 					?>
 				</p>
 				</div>
-				<a href="#" class="special_button">Read More</a>
+				<a href="software_development.php" class="special_button">Read More</a>
 			</div>
 		</div>		
 		<div class="column3">
 			<h2>ASIC</h2>
 			</br>
-			<a href="#" class="image image-full"><img src="images/ASIC.jpg" height="150" alt="" /></a>
+			<a  class="image image-full"><img src="images/ASIC.jpg" height="150" alt="" /></a>
 			<div class="box">
 				<div class="editable" contentEditable="true" filename="ASIC.txt">
 				<p class="special_p">
@@ -244,13 +248,13 @@ $(document).ready(function () {
 					?>
 				</p>
 				</div>
-				<a href="#" class="special_button">Read More</a>
+				<a href="ASIC.php" class="special_button">Read More</a>
 			</div>
 		</div>			
 		<div class="column4">
 			<h2>PCB</h2>
 			</br>
-			<a href="#" class="image image-full"><img src="images/PCB.jpg" height="150" alt="" /></a>
+			<a  class="image image-full"><img src="images/PCB.jpg" height="150" alt="" /></a>
 			<div class="box">
 				<div class="editable" contentEditable="true" filename="PCB.txt">
 					<p class="special_p">
@@ -259,7 +263,7 @@ $(document).ready(function () {
 						?>
 					</p>
 				</div>
-				<a href="#" class="special_button">Read More</a>
+				<a href="PCB.php" class="special_button">Read More</a>
 			</div>
 		</div>			
 	</div>
@@ -270,16 +274,16 @@ $(document).ready(function () {
 			<span class="byline">We are more than welcome to receive your feedback</span>
 		</div>
 		<ul class="contact">
-			<a href="#"><li><img height="64" width="64" src="images/facebook_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/twitter_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/googleplus_follow.png"></li></a>
-			<a href="#"><li><img height="64" width="64" src="images/youtube_follow.png"></li></a>
+			<a href="https://www.facebook.com/pages/Bhive-Design-Technologies/178744452330519"><li><img height="64" width="64" src="images/facebook_follow.png"></li></a>
+			<a href="https://twitter.com/BhiveDesignTech"><li><img height="64" width="64" src="images/twitter_follow.png"></li></a>
+			<a href="https://plus.google.com/b/103171141557858395694/103171141557858395694"><li><img height="64" width="64" src="images/googleplus_follow.png"></li></a>
+			<a href="http://www.youtube.com/channel/UC5Mw-LsTFga-hagnQgouc4A"><li><img height="64" width="64" src="images/youtube_follow.png"></li></a>
 			<a href="#"><li><img height="64" width="64" src="images/linkedin_follow.png"></li></a>
 			<a href="#"><li><img height="64" width="64" src="images/blogger_follow.png"></li></a>
 		</ul>
 </div>
 <div id="copyright" class="container">
-	<p>Copyright (c) 2013 MYBHIVE.com. All rights reserved.</p>
+	<p>Copyright (c) Bhive Design Technologies 2013 (mybhive.com). All rights reserved.</p>
 </div>
 </body>
 </html>

@@ -1,0 +1,1 @@
+Soclogic does top class maintaining and upgrading the applications that are deployed in the customer environment as we understand it is always critical to ensure the availability of the services un-interruptedly
